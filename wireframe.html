@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation & Feedback Form - The Ritz-Carlton Astana</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tables-forms-styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Reservation & Feedback Form</h1>
+  </div>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Task 1: Home</a></li>
+      <li><a href="tribute.html">Task 2: About César Ritz</a></li>
+      <li><a href="tables-forms.html">Task 3: Reservations</a></li>
+      <li><a href="wireframe.html">Reservation Form</a></li>
+    </ul>
+  </div>
+
+  <div class="tables-forms-container">
+    <section class="form-section">
+      <h2>Hotel Reservation & Feedback Form</h2>
+      
+      <form class="reservation-form" action="#" method="post">
+        <div class="form-group">
+          <label for="guest-name">Full Name:</label>
+          <input type="text" id="guest-name" name="guest-name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="guest-email">Email Address:</label>
+          <input type="email" id="guest-email" name="guest-email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="guest-type">Guest Type:</label>
+          <select id="guest-type" name="guest-type" required>
+            <option value="">Select Guest Type</option>
+            <option value="business">Business Traveler</option>
+            <option value="leisure">Leisure Guest</option>
+            <option value="group">Group/Event</option>
+            <option value="vip">VIP Guest</option>
+            <option value="returning">Returning Guest</option>
+          </select>
+        </div>
+
+        <fieldset class="radio-group">
+          <legend>Are you satisfied with our hotel services?</legend>
+          <div class="radio-options">
+            <input type="radio" id="satisfied-yes" name="satisfaction" value="yes">
+            <label for="satisfied-yes">Yes, Very Satisfied</label>
+          </div>
+          <div class="radio-options">
+            <input type="radio" id="satisfied-no" name="satisfaction" value="no">
+            <label for="satisfied-no">No, Needs Improvement</label>
+          </div>
+          <div class="radio-options">
+            <input type="radio" id="satisfied-neutral" name="satisfaction" value="neutral">
+            <label for="satisfied-neutral">Neutral</label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="comments">Additional Comments or Special Requests:</label>
+          <textarea id="comments" name="comments" rows="5" 
+            placeholder="Please share your feedback or any special requests for your stay..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Submit Reservation Request</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Hotel Management System. All rights reserved..</p>
+  </div>
+</body>
+</html>
